@@ -10,5 +10,8 @@ public class SingletonPatternTest
 		eagerObj.show();
 		System.out.println(eagerObj.hashCode());
 		System.out.println(eagerObj1.hashCode());
+		//STATIC BLOCK INTIALISATION
+		StaticBlockInitialisation staticBlock=StaticBlockInitialisation .getInstance();
+		staticBlock.show();
 	}
 }
