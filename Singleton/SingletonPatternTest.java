@@ -34,6 +34,10 @@ public class SingletonPatternTest
 		SerializationSingleton instanceTwo = SerializationSingleton.getInstance();
 		System.out.println(instanceOne.hashCode());
 		System.out.println(instanceTwo.hashCode());
-
+		// ENUM SINGLETON
+		EnumSingleton single = EnumSingleton.Instance;
+		System.out.println(single.getValue());
+		single.setValue(2); 
+		System.out.println(single.getValue());
 	}
 }
