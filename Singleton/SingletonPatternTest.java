@@ -13,5 +13,9 @@ public class SingletonPatternTest
 		//STATIC BLOCK INTIALISATION
 		StaticBlockInitialisation staticBlock=StaticBlockInitialisation .getInstance();
 		staticBlock.show();
+		//LAZY INITIALISATION
+		LazyInitialisation lazyObj=LazyInitialisation.getInstance();
+		lazyObj.show();
+
 	}
 }
