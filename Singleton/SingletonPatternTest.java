@@ -16,6 +16,12 @@ public class SingletonPatternTest
 		//LAZY INITIALISATION
 		LazyInitialisation lazyObj=LazyInitialisation.getInstance();
 		lazyObj.show();
+		// THREAD SAFE SINGLETON
+		System.out.println("Thread safe ");
+		ThreadSafeSingleton threadsafe = ThreadSafeSingleton.getInstance();
+		ThreadSafeSingleton threadsafe1 = ThreadSafeSingleton.getInstance();
+		System.out.println(threadsafe.hashCode());
+		System.out.println(threadsafe1.hashCode());
 
 	}
 }
