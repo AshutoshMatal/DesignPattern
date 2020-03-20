@@ -28,6 +28,12 @@ public class SingletonPatternTest
 		BillPughSingleton billPughObj2 = BillPughSingleton.getInstance();
 		System.out.println(billPughObj1.hashCode());
 		System.out.println(billPughObj2.hashCode());
+		// SERIALIZATION SINGLETON
+		System.out.println("Serialization");
+		SerializationSingleton instanceOne = SerializationSingleton.getInstance();
+		SerializationSingleton instanceTwo = SerializationSingleton.getInstance();
+		System.out.println(instanceOne.hashCode());
+		System.out.println(instanceTwo.hashCode());
 
 	}
 }
