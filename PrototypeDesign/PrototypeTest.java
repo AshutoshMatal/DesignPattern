@@ -1,7 +1,5 @@
 package com.DesignPattern.PrototypeDesign;
-
 import java.util.List;
-
 public class PrototypeTest
 {
 	public static void main(String[] args) throws CloneNotSupportedException 
