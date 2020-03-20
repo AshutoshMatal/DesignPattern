@@ -22,6 +22,12 @@ public class SingletonPatternTest
 		ThreadSafeSingleton threadsafe1 = ThreadSafeSingleton.getInstance();
 		System.out.println(threadsafe.hashCode());
 		System.out.println(threadsafe1.hashCode());
+		//BILL PUGH SINGLETON
+		System.out.println("Bill pugh");
+		BillPughSingleton billPughObj1 = BillPughSingleton.getInstance();
+		BillPughSingleton billPughObj2 = BillPughSingleton.getInstance();
+		System.out.println(billPughObj1.hashCode());
+		System.out.println(billPughObj2.hashCode());
 
 	}
 }
