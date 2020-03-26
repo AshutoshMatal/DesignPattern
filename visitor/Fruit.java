@@ -1,12 +1,12 @@
 package com.DesignPattern.visitor;
 
-public class Fruit 
+public class Fruit implements ItemElement
 {
 	private int pricePerKg;
 	private int weight;
 	private String name;
 
-	public Fruit(int price, int weight, String name) 
+	public Fruit(int price, int weight, String name)
 	{
 		super();
 		this.pricePerKg = price;
@@ -19,7 +19,7 @@ public class Fruit
 		return pricePerKg;
 	}
 
-	public int getWeight() 
+	public int getWeight()
 	{
 		return weight;
 	}
@@ -27,6 +27,12 @@ public class Fruit
 	public String getName()
 	{
 		return name;
+	}
+
+	@Override
+	public int accept(ShoppingCartVisitor visitor) 
+	{
+		return visitor.visit(this);
 	}
 
 }
